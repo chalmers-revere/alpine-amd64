@@ -24,4 +24,6 @@ RUN apk update && \
         g++ \
         make \
         ninja \
-        linux-headers
+        linux-headers && \
+    apk add libcluon --no-cache --repository https://chrberger.github.io/libcluon/alpine/v3.7 --allow-untrusted
+
